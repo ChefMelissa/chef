@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipe Scaler | Chef Melissa</title>
+<meta name="description" content="Multiply or halve a recipe with non-linear adjustments for salt, garlic, chili, and other ingredients that should not double straight.">
+<link rel="canonical" href="https://chefmelissa.shop/tools/recipe-scaler.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#fff7ee">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5954197996123596" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="/"><span class="brand-mark">CM</span><span><strong>Chef Melissa</strong><small>real recipes, real weeknights</small></span></a><button class="nav-toggle" data-nav-toggle aria-label="Open menu">Menu</button><nav class="main-nav" data-nav><a href="/recipes/">Recipes</a><a href="/guides/">Guides</a><a href="/tools/">Tools</a><a href="/start-here.html">Start Here</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav></div></header>
+
+<main id="content">
+<section class="page-title"><div class="container"><nav class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/tools/">Tools</a><span>/</span>Recipe scaler</nav><span class="eyebrow">Tool</span><h1>Recipe scaler</h1><p class="lede">Paste a recipe, choose a multiplier, and the scaler does the math &mdash; but it's smart about salt, garlic, chili, and other things that don't scale linearly.</p></div></section>
+
+<section class="section"><div class="container article-layout">
+<article class="article-body">
+
+<div class="tool-card">
+<div class="row">
+<div>
+<label for="originalServings">Original servings</label>
+<input type="number" id="originalServings" value="4" min="1" step="1">
+</div>
+<div>
+<label for="targetServings">Target servings</label>
+<input type="number" id="targetServings" value="6" min="1" step="1">
+</div>
+<div style="flex: 0 1 auto;">
+<label>&nbsp;</label>
+<button class="btn" id="scaleBtn" type="button">Scale</button>
+</div>
+</div>
+
+<label for="ingredientsInput">Paste your ingredient list (one per line)</label>
+<textarea id="ingredientsInput" rows="10" placeholder="Example:
+1 lb chicken thighs
+1 cup rice
+2 cups broth
+3 garlic cloves, minced
+1 tsp salt
+1/4 tsp red pepper flakes
+1 tbsp lemon juice"></textarea>
+
+<div class="tool-output" id="scalerOutput" aria-live="polite">Paste a list of ingredients above and click <strong>Scale</strong>.</div>
+<noscript><p style="margin-top:1rem;color:var(--accent-dark);">This tool needs JavaScript turned on to do the math.</p></noscript>
+</div>
+
+<section><h2>What this tool does</h2>
+<p>The scaler reads each line of your ingredient list, finds the number, multiplies it by the right factor, and then re-formats the line. For most ingredients, the factor is just the linear scale (target servings &divide; original servings). For ingredients that don't scale linearly, it uses a smaller factor and adds a note.</p>
+<p>Linear ingredients: meat, vegetables, beans, broth, milk, cream, oil, butter, pasta, rice. These multiply straight.</p>
+<p>Sub-linear ingredients (uses 70% of the linear factor): salt, garlic, ginger, chili, fresh chili, dried chili, red pepper flakes, cayenne, oregano, thyme, rosemary, sage, marjoram, bay leaf, lemon, lime, vinegar, mustard powder, baking powder, baking soda. These get a smaller bump and are flagged so you can adjust at the end.</p>
+<p>This is the same logic from the <a href="/guides/how-to-scale-recipes.html">scaling guide</a>, applied automatically.</p>
+</section>
+
+<section><h2>Tips</h2>
+<ul class="rich-list">
+<li>This is a math helper, not a chef. Always taste at the end and add more salt, acid, or chili in small amounts if you need them.</li>
+<li>For doubling baked goods (cakes, breads, cookies), this tool will get you in the ballpark, but baking is sensitive enough that you should look up the specific recipe rather than trust a generic scaler.</li>
+<li>Eggs in baking don't halve cleanly. The tool will tell you "1.5 eggs" &mdash; in practice, beat 2 eggs and use half by volume, or use 1 large egg + 1 yolk.</li>
+<li>Your last entry is saved to your own browser. It's not sent anywhere.</li>
+</ul>
+</section>
+
+</article>
+
+<aside class="sidebar sticky-card">
+<h2>Related</h2>
+<a href="/guides/how-to-scale-recipes.html">How to scale a recipe (guide)</a>
+<a href="/tools/conversion-calculator.html">Unit converter</a>
+<a href="/tools/pantry-checklist.html">Pantry checklist</a>
+<div class="notice">Saves your last input to your own browser. Clear it from the <a href="/privacy-settings.html">privacy settings</a> page.</div>
+</aside>
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="/"><span class="brand-mark">CM</span><span><strong>Chef Melissa</strong><small>real recipes, real weeknights</small></span></a><p>Independent home-cooking website.</p></div><div><h2>Cook</h2><a href="/start-here.html">Start Here</a><a href="/recipes/">Recipes</a><a href="/guides/">Guides</a><a href="/tools/">Tools</a><a href="/sitemap.html">Sitemap</a></div><div><h2>Site</h2><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Editorial Policy</a><a href="/advertising-policy.html">Advertising Policy</a><a href="/copyright-policy.html">Copyright</a><a href="/accessibility.html">Accessibility</a></div><div><h2>Privacy &amp; legal</h2><a href="/privacy.html">Privacy Policy</a><a href="/cookie-policy.html">Cookie Policy</a><a href="/privacy-settings.html">Privacy Settings</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></div></div><div class="container footer-bottom"><p>&copy; <span class="yr">2026</span> Chef Melissa.</p><p>Independent publisher.</p></div></footer>
+<script>document.querySelectorAll('.yr').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+<script src="/assets/js/site.js" defer></script>
+
+
+<script>
+(function () {
+  var SUBLINEAR_PATTERN = /\b(salt|salts|garlic|ginger|chili|chilli|chile|chiles|cayenne|red pepper flakes|pepper flakes|oregano|thyme|rosemary|sage|marjoram|bay leaf|bay leaves|lemon juice|lime juice|lemon zest|lime zest|vinegar|mustard powder|baking powder|baking soda|nutmeg|cloves)\b/i;
+  var FACTION_MAP = {
+    '1/8': 0.125, '1/4': 0.25, '1/3': 0.3333, '3/8': 0.375,
+    '1/2': 0.5, '5/8': 0.625, '2/3': 0.6667, '3/4': 0.75, '7/8': 0.875,
+    '1/16': 0.0625, '1/5': 0.2, '1/6': 0.1667
+  };
+
+  function parseQty(token) {
+    token = token.replace(',', '');
+    if (FACTION_MAP[token] !== undefined) return FACTION_MAP[token];
+    var mixed = token.match(/^(\d+)\s*(\d+\/\d+)$/);
+    if (mixed) {
+      var whole = parseInt(mixed[1], 10);
+      var frac = FACTION_MAP[mixed[2]];
+      if (frac !== undefined) return whole + frac;
+    }
+    var simpleFrac = token.match(/^(\d+)\/(\d+)$/);
+    if (simpleFrac) return parseInt(simpleFrac[1], 10) / parseInt(simpleFrac[2], 10);
+    var f = parseFloat(token);
+    return isNaN(f) ? null : f;
+  }
+
+  function fmtQty(n) {
+    if (!isFinite(n)) return '?';
+    if (n === 0) return '0';
+    if (n < 0.0625) return n.toFixed(2);
+    var fractions = [
+      [0.125, '1/8'], [0.1667, '1/6'], [0.2, '1/5'], [0.25, '1/4'],
+      [0.3333, '1/3'], [0.375, '3/8'], [0.5, '1/2'], [0.625, '5/8'],
+      [0.6667, '2/3'], [0.75, '3/4'], [0.875, '7/8']
+    ];
+    var whole = Math.floor(n);
+    var rem = n - whole;
+    if (rem < 0.04) return whole.toString();
+    if (rem > 0.96) return (whole + 1).toString();
+    var best = null, bestDiff = 1;
+    for (var i = 0; i < fractions.length; i++) {
+      var d = Math.abs(rem - fractions[i][0]);
+      if (d < bestDiff) { bestDiff = d; best = fractions[i][1]; }
+    }
+    if (bestDiff > 0.04) {
+      return n.toFixed(2);
+    }
+    return whole > 0 ? (whole + ' ' + best) : best;
+  }
+
+  function scaleLine(line, factor, subFactor) {
+    var trimmed = line.trim();
+    if (!trimmed) return { line: '', flagged: false };
+    var qtyMatch = trimmed.match(/^(\d+\s+\d+\/\d+|\d+\/\d+|\d*\.?\d+)\s*(.*)$/);
+    if (!qtyMatch) return { line: trimmed, flagged: false };
+    var qty = parseQty(qtyMatch[1]);
+    var rest = qtyMatch[2] || '';
+    if (qty === null) return { line: trimmed, flagged: false };
+    var subLinear = SUBLINEAR_PATTERN.test(rest);
+    var newQty = qty * (subLinear ? subFactor : factor);
+    var prefix = subLinear ? '* ' : '';
+    return { line: prefix + fmtQty(newQty) + ' ' + rest, flagged: subLinear };
+  }
+
+  function loadSaved() {
+    try {
+      var s = parseInt(localStorage.getItem('cm-scaler-servings'), 10);
+      if (s > 0) document.getElementById('targetServings').value = s;
+    } catch (e) {}
+  }
+
+  function saveSetting() {
+    try {
+      var t = parseInt(document.getElementById('targetServings').value, 10);
+      if (t > 0) localStorage.setItem('cm-scaler-servings', String(t));
+    } catch (e) {}
+  }
+
+  function run() {
+    var orig = parseInt(document.getElementById('originalServings').value, 10);
+    var tgt = parseInt(document.getElementById('targetServings').value, 10);
+    var text = document.getElementById('ingredientsInput').value;
+    var out = document.getElementById('scalerOutput');
+    if (!orig || !tgt || orig <= 0 || tgt <= 0) {
+      out.textContent = 'Enter valid serving numbers.';
+      return;
+    }
+    var factor = tgt / orig;
+    var subFactor = 1 + (factor - 1) * 0.7;
+    var lines = text.split(/\r?\n/);
+    var scaled = lines.map(function (l) { return scaleLine(l, factor, subFactor); });
+    var anyFlagged = scaled.some(function (s) { return s.flagged; });
+    var html = '<strong>Scaled (' + orig + ' &rarr; ' + tgt + ' servings, &times;' + factor.toFixed(2) + '):</strong><br><br>';
+    html += scaled.map(function (s) { return s.line || '&nbsp;'; }).join('<br>');
+    if (anyFlagged) {
+      html += '<br><br><em>Lines starting with * are sub-linear ingredients (salt, garlic, chili, herbs, acid, leavening). The scaler used a smaller factor for them. Always taste and adjust at the end.</em>';
+    }
+    out.innerHTML = html;
+    saveSetting();
+  }
+
+  document.getElementById('scaleBtn').addEventListener('click', run);
+  document.getElementById('originalServings').addEventListener('change', run);
+  document.getElementById('targetServings').addEventListener('change', run);
+  loadSaved();
+})();
+</script>
+</body>
+</html>

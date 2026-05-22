@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility | Chef Melissa</title>
+<meta name="description" content="What chefmelissa.shop does to be readable on screen readers, keyboards, mobile, and slow connections, and how to report a problem.">
+<link rel="canonical" href="https://chefmelissa.shop/accessibility.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#fff7ee">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="/"><span class="brand-mark">CM</span><span><strong>Chef Melissa</strong><small>real recipes, real weeknights</small></span></a><button class="nav-toggle" data-nav-toggle aria-label="Open menu">Menu</button><nav class="main-nav" data-nav><a href="/recipes/">Recipes</a><a href="/guides/">Guides</a><a href="/tools/">Tools</a><a href="/start-here.html">Start Here</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav></div></header>
+
+<main id="content">
+<section class="page-title"><div class="container"><span class="eyebrow">Accessibility</span><h1>Accessibility</h1><p class="lede">What this site does to be usable on screen readers, keyboards, phones, and slow connections.</p><div class="policy-meta"><span>Last updated: 2026-04-29</span><span>Contact: hello@chefmelissa.shop</span></div></div></section>
+
+<section class="section"><div class="container article-layout">
+<article class="article-body legal-article">
+
+<section><h2>The standard I aim for</h2>
+<p>I aim for the principles in WCAG 2.1 at the AA level: text that is readable, navigation that works without a mouse, contrast that doesn't strain the eyes, alternative text for images, and structure that makes sense to assistive technology. I'm not going to claim full conformance &mdash; that's a formal audit term and I haven't done one &mdash; but I work in that direction.</p>
+</section>
+
+<section><h2>What's in place</h2>
+<ul class="rich-list">
+  <li><strong>Skip link</strong> at the top of every page so keyboard and screen-reader users can jump past the navigation.</li>
+  <li><strong>Semantic HTML</strong> &mdash; real heading levels, real lists, real links. The recipe pages use headings in order so a screen reader can scan them.</li>
+  <li><strong>Alt text on every image</strong> that conveys information. Decorative graphics get an empty alt attribute so screen readers don't announce them.</li>
+  <li><strong>Keyboard navigation</strong> &mdash; the menu, the search box on the recipe archive, and the kitchen tools all work without a mouse. Focus styles are visible.</li>
+  <li><strong>Readable contrast</strong> &mdash; the body text and links are above 4.5:1 against the background.</li>
+  <li><strong>Mobile first</strong> &mdash; the layout reflows down to about 320px wide. The recipe card is reachable without horizontal scrolling.</li>
+  <li><strong>No autoplay video, no popups</strong> over the recipe.</li>
+  <li><strong>Print-friendly recipe cards</strong>. The print stylesheet hides the navigation, sidebar, and ads so the printed sheet is just the recipe.</li>
+  <li><strong>Light JavaScript</strong> &mdash; recipes and guides read fine even if scripts are blocked. The kitchen tools require JavaScript to do the maths and have a clear note when JS is off.</li>
+</ul>
+</section>
+
+<section><h2>Things I'm still improving</h2>
+<ul class="rich-list">
+  <li>Some recipe pages need real photos to replace placeholder graphics. The placeholder graphics carry alt text so screen readers don't see a broken element, but real photos with descriptive alt text are coming.</li>
+  <li>The mobile menu animates open and closed. I don't reduce-motion that animation yet. If you have <code>prefers-reduced-motion</code> turned on at the OS level, the animation is already minimal.</li>
+  <li>I haven't yet added a colour-blind-safe alternate theme. The orange accent has been tested for AA contrast; if you find a combination that's hard to read, please tell me.</li>
+</ul>
+</section>
+
+<section><h2>If something is hard to use</h2>
+<p>Email hello@chefmelissa.shop and tell me what didn't work. Useful details: the URL, the device, the assistive technology if any, and what you were trying to do. I treat accessibility issues as bugs, not feature requests, and I'll prioritise them.</p>
+</section>
+
+<section><h2>Third-party content</h2>
+<p>Ads served by Google AdSense are produced by other parties and follow Google's accessibility guidelines, not mine. If you find a specific ad creative on this site that's inaccessible (autoplaying with sound, blocking the page, or unreadable to a screen reader), send me the URL and a screenshot if possible so I can flag it.</p>
+</section>
+
+</article>
+
+<aside class="sidebar sticky-card">
+  <h2>Related</h2>
+  <a href="/contact.html">Contact</a>
+  <a href="/editorial-policy.html">Editorial Policy</a>
+  <a href="/privacy.html">Privacy Policy</a>
+</aside>
+
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="/"><span class="brand-mark">CM</span><span><strong>Chef Melissa</strong><small>real recipes, real weeknights</small></span></a><p>Independent home-cooking website.</p></div><div><h2>Cook</h2><a href="/start-here.html">Start Here</a><a href="/recipes/">Recipes</a><a href="/guides/">Guides</a><a href="/tools/">Tools</a><a href="/sitemap.html">Sitemap</a></div><div><h2>Site</h2><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Editorial Policy</a><a href="/advertising-policy.html">Advertising Policy</a><a href="/copyright-policy.html">Copyright</a><a href="/accessibility.html">Accessibility</a></div><div><h2>Privacy &amp; legal</h2><a href="/privacy.html">Privacy Policy</a><a href="/cookie-policy.html">Cookie Policy</a><a href="/privacy-settings.html">Privacy Settings</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></div></div><div class="container footer-bottom"><p>&copy; <span class="yr">2026</span> Chef Melissa.</p><p>Independent publisher.</p></div></footer>
+<script>document.querySelectorAll('.yr').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

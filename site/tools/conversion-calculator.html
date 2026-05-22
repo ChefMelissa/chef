@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitchen Unit Converter | Chef Melissa</title>
+<meta name="description" content="Convert cups, grams, tablespoons, ounces, and milliliters with ingredient-specific accuracy. Flour, sugar, butter, and rice are not the same density.">
+<link rel="canonical" href="https://chefmelissa.shop/tools/conversion-calculator.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#fff7ee">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5954197996123596" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="/"><span class="brand-mark">CM</span><span><strong>Chef Melissa</strong><small>real recipes, real weeknights</small></span></a><button class="nav-toggle" data-nav-toggle aria-label="Open menu">Menu</button><nav class="main-nav" data-nav><a href="/recipes/">Recipes</a><a href="/guides/">Guides</a><a href="/tools/">Tools</a><a href="/start-here.html">Start Here</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav></div></header>
+
+<main id="content">
+<section class="page-title"><div class="container"><nav class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/tools/">Tools</a><span>/</span>Unit converter</nav><span class="eyebrow">Tool</span><h1>Kitchen unit converter</h1><p class="lede">Convert volume to weight (and back) with ingredient-specific accuracy. 1 cup of flour is not 1 cup of butter is not 1 cup of rice. This tool knows that.</p></div></section>
+
+<section class="section"><div class="container article-layout">
+<article class="article-body">
+
+<div class="tool-card">
+<div class="row">
+<div>
+<label for="convAmount">Amount</label>
+<input type="number" id="convAmount" value="1" step="0.01" min="0">
+</div>
+<div>
+<label for="convFromUnit">From unit</label>
+<select id="convFromUnit">
+<option value="cup">cup (US)</option>
+<option value="tbsp">tablespoon</option>
+<option value="tsp">teaspoon</option>
+<option value="oz">ounce (weight)</option>
+<option value="g">gram</option>
+<option value="ml">milliliter</option>
+<option value="floz">fluid ounce</option>
+</select>
+</div>
+<div>
+<label for="convIngredient">Ingredient (for cup&harr;weight)</label>
+<select id="convIngredient">
+<option value="water">water (or any liquid)</option>
+<option value="flour">all-purpose flour</option>
+<option value="sugarw">granulated sugar (white)</option>
+<option value="sugarb">brown sugar, packed</option>
+<option value="butter">butter</option>
+<option value="oil">oil</option>
+<option value="rice">uncooked white rice</option>
+<option value="rolled">rolled oats</option>
+<option value="honey">honey or maple syrup</option>
+<option value="salt">kosher salt (Diamond Crystal)</option>
+</select>
+</div>
+</div>
+<div class="tool-output" id="convOutput" aria-live="polite">Enter an amount to see all the equivalents.</div>
+<noscript><p style="margin-top:1rem;color:var(--accent-dark);">This tool needs JavaScript turned on to do the math. Sorry.</p></noscript>
+</div>
+
+<section><h2>How this tool works</h2>
+<p>Volume-to-weight conversions depend on the ingredient. 1 US cup of all-purpose flour weighs about 125 grams. 1 US cup of granulated sugar weighs about 200 grams. 1 US cup of butter weighs about 227 grams. 1 US cup of water weighs 240 grams. The conversion is not arithmetic; it's a lookup.</p>
+<p>The densities I'm using:</p>
+<ul class="rich-list">
+<li>Water and most thin liquids (broth, milk, juice): 240 g/cup, 1 g/ml.</li>
+<li>All-purpose flour: 125 g/cup. Spooned and leveled (not packed).</li>
+<li>Granulated sugar: 200 g/cup.</li>
+<li>Brown sugar (packed): 213 g/cup.</li>
+<li>Butter: 227 g/cup. (1 stick = 113 g.)</li>
+<li>Oil: 218 g/cup.</li>
+<li>Uncooked white rice: 200 g/cup.</li>
+<li>Rolled oats: 90 g/cup.</li>
+<li>Honey or maple syrup: 340 g/cup.</li>
+<li>Kosher salt (Diamond Crystal brand): 144 g/cup.</li>
+</ul>
+<p>If your kitchen scale gives a different number than mine, your scale is probably right and mine is the average. Brand differences (especially salt and flour) are real.</p>
+</section>
+
+<section><h2>The conversions that don't depend on ingredient</h2>
+<ul class="rich-list">
+<li>1 cup = 16 tablespoons = 48 teaspoons = 240 ml (US).</li>
+<li>1 tablespoon = 3 teaspoons = 15 ml.</li>
+<li>1 fluid ounce = 2 tablespoons = 30 ml.</li>
+<li>1 ounce (weight) = 28.35 grams.</li>
+<li>1 pound = 16 ounces = 453.6 grams.</li>
+</ul>
+<p>These are pure unit conversions and don't care what's in the cup.</p>
+</section>
+
+<section><h2>Why my recipes use weight when it matters</h2>
+<p>For most savoury cooking, volume is fine. A cup of broth, more or less, is a cup of broth. For baking, weight is much more accurate; "1 cup of flour" can vary by 30% depending on whether you scoop, spoon, or pack. If you bake even a few times a year, a $15 kitchen scale pays for itself.</p>
+<p>The recipes on this site use volume measurements with weights in parentheses where the difference matters.</p>
+</section>
+
+</article>
+
+<aside class="sidebar sticky-card">
+<h2>Related</h2>
+<a href="/tools/recipe-scaler.html">Recipe scaler</a>
+<a href="/tools/pantry-checklist.html">Pantry checklist</a>
+<a href="/guides/how-to-scale-recipes.html">How to scale recipes</a>
+<div class="notice">No data leaves this page. The math runs in your browser.</div>
+</aside>
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="/"><span class="brand-mark">CM</span><span><strong>Chef Melissa</strong><small>real recipes, real weeknights</small></span></a><p>Independent home-cooking website.</p></div><div><h2>Cook</h2><a href="/start-here.html">Start Here</a><a href="/recipes/">Recipes</a><a href="/guides/">Guides</a><a href="/tools/">Tools</a><a href="/sitemap.html">Sitemap</a></div><div><h2>Site</h2><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Editorial Policy</a><a href="/advertising-policy.html">Advertising Policy</a><a href="/copyright-policy.html">Copyright</a><a href="/accessibility.html">Accessibility</a></div><div><h2>Privacy &amp; legal</h2><a href="/privacy.html">Privacy Policy</a><a href="/cookie-policy.html">Cookie Policy</a><a href="/privacy-settings.html">Privacy Settings</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></div></div><div class="container footer-bottom"><p>&copy; <span class="yr">2026</span> Chef Melissa.</p><p>Independent publisher.</p></div></footer>
+<script>document.querySelectorAll('.yr').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+<script src="/assets/js/site.js" defer></script>
+
+
+<script>
+(function () {
+  var ML_PER_CUP = 240;
+  var ML_PER_TBSP = 15;
+  var ML_PER_TSP = 5;
+  var ML_PER_FLOZ = 30;
+  var G_PER_OZ = 28.3495;
+
+  var DENSITY_G_PER_CUP = {
+    water: 240, flour: 125, sugarw: 200, sugarb: 213,
+    butter: 227, oil: 218, rice: 200, rolled: 90,
+    honey: 340, salt: 144
+  };
+
+  function fmt(n) {
+    if (!isFinite(n)) return '-';
+    if (n === 0) return '0';
+    if (n < 0.01) return n.toExponential(2);
+    if (n < 1) return n.toFixed(3);
+    if (n < 10) return n.toFixed(2);
+    if (n < 100) return n.toFixed(1);
+    return Math.round(n).toString();
+  }
+
+  function toGrams(amount, fromUnit, ingredient) {
+    var density = DENSITY_G_PER_CUP[ingredient] || DENSITY_G_PER_CUP.water;
+    switch (fromUnit) {
+      case 'cup': return amount * density;
+      case 'tbsp': return amount * (density / 16);
+      case 'tsp': return amount * (density / 48);
+      case 'oz': return amount * G_PER_OZ;
+      case 'g': return amount;
+      case 'ml': return amount * (density / ML_PER_CUP);
+      case 'floz': return amount * ML_PER_FLOZ * (density / ML_PER_CUP);
+    }
+    return amount;
+  }
+
+  function toMl(amount, fromUnit, ingredient) {
+    switch (fromUnit) {
+      case 'cup': return amount * ML_PER_CUP;
+      case 'tbsp': return amount * ML_PER_TBSP;
+      case 'tsp': return amount * ML_PER_TSP;
+      case 'floz': return amount * ML_PER_FLOZ;
+      case 'ml': return amount;
+      case 'oz': {
+        var density = DENSITY_G_PER_CUP[ingredient] || DENSITY_G_PER_CUP.water;
+        return (amount * G_PER_OZ) / (density / ML_PER_CUP);
+      }
+      case 'g': {
+        var d = DENSITY_G_PER_CUP[ingredient] || DENSITY_G_PER_CUP.water;
+        return amount / (d / ML_PER_CUP);
+      }
+    }
+    return amount;
+  }
+
+  function update() {
+    var amt = parseFloat(document.getElementById('convAmount').value);
+    var fromUnit = document.getElementById('convFromUnit').value;
+    var ing = document.getElementById('convIngredient').value;
+    var out = document.getElementById('convOutput');
+    if (isNaN(amt) || amt < 0) {
+      out.textContent = 'Enter a positive number to convert.';
+      return;
+    }
+    var ml = toMl(amt, fromUnit, ing);
+    var g = toGrams(amt, fromUnit, ing);
+    out.innerHTML =
+      '<strong>' + fmt(ml / ML_PER_CUP) + '</strong> cups &middot; ' +
+      '<strong>' + fmt(ml / ML_PER_TBSP) + '</strong> tbsp &middot; ' +
+      '<strong>' + fmt(ml / ML_PER_TSP) + '</strong> tsp<br>' +
+      '<strong>' + fmt(ml) + '</strong> ml &middot; ' +
+      '<strong>' + fmt(ml / ML_PER_FLOZ) + '</strong> fl oz<br>' +
+      '<strong>' + fmt(g) + '</strong> grams &middot; ' +
+      '<strong>' + fmt(g / G_PER_OZ) + '</strong> ounces (weight)';
+  }
+
+  ['convAmount', 'convFromUnit', 'convIngredient'].forEach(function (id) {
+    document.getElementById(id).addEventListener('input', update);
+    document.getElementById(id).addEventListener('change', update);
+  });
+  update();
+})();
+</script>
+</body>
+</html>

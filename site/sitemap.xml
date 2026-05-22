@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://chefmelissa.shop/</loc><priority>1.0</priority></url>
+  <url><loc>https://chefmelissa.shop/about.html</loc><priority>0.7</priority></url>
+  <url><loc>https://chefmelissa.shop/contact.html</loc><priority>0.7</priority></url>
+  <url><loc>https://chefmelissa.shop/start-here.html</loc><priority>0.7</priority></url>
+  <url><loc>https://chefmelissa.shop/sitemap.html</loc><priority>0.5</priority></url>
+  <url><loc>https://chefmelissa.shop/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://chefmelissa.shop/cookie-policy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://chefmelissa.shop/privacy-settings.html</loc><priority>0.4</priority></url>
+  <url><loc>https://chefmelissa.shop/terms.html</loc><priority>0.4</priority></url>
+  <url><loc>https://chefmelissa.shop/disclaimer.html</loc><priority>0.4</priority></url>
+  <url><loc>https://chefmelissa.shop/editorial-policy.html</loc><priority>0.4</priority></url>
+  <url><loc>https://chefmelissa.shop/advertising-policy.html</loc><priority>0.4</priority></url>
+  <url><loc>https://chefmelissa.shop/copyright-policy.html</loc><priority>0.4</priority></url>
+  <url><loc>https://chefmelissa.shop/accessibility.html</loc><priority>0.4</priority></url>
+
+  <url><loc>https://chefmelissa.shop/recipes/</loc><priority>0.9</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/lemon-herb-chicken-rice-skillet.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/chickpea-spinach-coconut-curry.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/creamy-tomato-basil-pasta-bake.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/smoky-black-bean-sweet-potato-tacos.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/garlic-butter-salmon-grain-bowls.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/lentil-vegetable-soup-with-rosemary.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/honey-mustard-sheet-pan-chicken.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/vegetable-fried-rice-with-eggs.html</loc><priority>0.8</priority></url>
+
+  <url><loc>https://chefmelissa.shop/guides/</loc><priority>0.7</priority></url>
+  <url><loc>https://chefmelissa.shop/guides/how-to-plan-a-week-of-dinners.html</loc><priority>0.6</priority></url>
+  <url><loc>https://chefmelissa.shop/guides/how-to-build-a-flexible-pantry.html</loc><priority>0.6</priority></url>
+  <url><loc>https://chefmelissa.shop/guides/safe-leftover-storage.html</loc><priority>0.6</priority></url>
+  <url><loc>https://chefmelissa.shop/guides/how-to-balance-acid-fat-salt-heat.html</loc><priority>0.6</priority></url>
+  <url><loc>https://chefmelissa.shop/guides/how-to-scale-recipes.html</loc><priority>0.6</priority></url>
+
+  <url><loc>https://chefmelissa.shop/tools/</loc><priority>0.6</priority></url>
+  <url><loc>https://chefmelissa.shop/tools/conversion-calculator.html</loc><priority>0.5</priority></url>
+  <url><loc>https://chefmelissa.shop/tools/recipe-scaler.html</loc><priority>0.5</priority></url>
+  <url><loc>https://chefmelissa.shop/tools/pantry-checklist.html</loc><priority>0.5</priority></url>
+</urlset>

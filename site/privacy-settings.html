@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Settings | Chef Melissa</title>
+<meta name="description" content="Manage your cookie and ad personalisation choices for chefmelissa.shop.">
+<link rel="canonical" href="https://chefmelissa.shop/privacy-settings.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#fff7ee">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="/"><span class="brand-mark">CM</span><span><strong>Chef Melissa</strong><small>real recipes, real weeknights</small></span></a><button class="nav-toggle" data-nav-toggle aria-label="Open menu">Menu</button><nav class="main-nav" data-nav><a href="/recipes/">Recipes</a><a href="/guides/">Guides</a><a href="/tools/">Tools</a><a href="/start-here.html">Start Here</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav></div></header>
+
+<main id="content">
+<section class="page-title"><div class="container"><span class="eyebrow">Privacy settings</span><h1>Manage your privacy choices</h1><p class="lede">Three things you can do here. None of them require an account.</p></div></section>
+
+<section class="section"><div class="container article-layout">
+<article class="article-body legal-article">
+
+<section><h2>1. Reopen the cookie consent message</h2>
+<p>If you're in the EEA, UK, or Switzerland, an ad-consent message should appear the first time you visit. To change your choice, click the button below; it will clear the saved decision and prompt you again on your next page load.</p>
+<p><button class="btn" id="resetConsent">Reset cookie consent</button></p>
+<p style="font-size:.9rem;color:var(--ink-soft);" id="resetStatus" aria-live="polite"></p>
+</section>
+
+<section><h2>2. Turn off Google ad personalisation</h2>
+<p>Use Google's own controls to stop personalised ads across all sites that show Google ads:</p>
+<ul class="rich-list">
+  <li><a href="https://adssettings.google.com/" rel="nofollow noopener">Google Ads Settings</a></li>
+  <li><a href="https://www.aboutads.info/choices/" rel="nofollow noopener">aboutads.info/choices</a> (US opt-outs)</li>
+  <li><a href="https://www.youronlinechoices.eu/" rel="nofollow noopener">youronlinechoices.eu</a> (EU opt-outs)</li>
+</ul>
+<p>Those controls are managed by Google and the advertising industry, not by me. They affect how ads behave across many sites, including this one.</p>
+</section>
+
+<section><h2>3. Clear what this site stored in your browser</h2>
+<p>The pantry checklist and the recipe scaler save the data you typed to your own browser. The button below clears just the items this site uses. It does not affect Google's cookies or your browser-wide settings.</p>
+<p><button class="btn secondary" id="clearLocal">Clear my saved tool data</button></p>
+<p style="font-size:.9rem;color:var(--ink-soft);" id="clearStatus" aria-live="polite"></p>
+</section>
+
+<section><h2>Other ways</h2>
+<p>You can always block cookies in your browser settings, use private/incognito mode, or install a browser extension. The recipes will still read fine.</p>
+<p>If you'd like to ask what data I personally hold about you (essentially: any email you sent me), email hello@chefmelissa.shop.</p>
+</section>
+
+</article>
+
+<aside class="sidebar sticky-card">
+  <h2>Related</h2>
+  <a href="/privacy.html">Privacy Policy</a>
+  <a href="/cookie-policy.html">Cookie Policy</a>
+  <a href="/advertising-policy.html">Advertising Policy</a>
+  <a href="/contact.html">Contact</a>
+</aside>
+
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="/"><span class="brand-mark">CM</span><span><strong>Chef Melissa</strong><small>real recipes, real weeknights</small></span></a><p>Independent home-cooking website.</p></div><div><h2>Cook</h2><a href="/start-here.html">Start Here</a><a href="/recipes/">Recipes</a><a href="/guides/">Guides</a><a href="/tools/">Tools</a><a href="/sitemap.html">Sitemap</a></div><div><h2>Site</h2><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Editorial Policy</a><a href="/advertising-policy.html">Advertising Policy</a><a href="/copyright-policy.html">Copyright</a><a href="/accessibility.html">Accessibility</a></div><div><h2>Privacy &amp; legal</h2><a href="/privacy.html">Privacy Policy</a><a href="/cookie-policy.html">Cookie Policy</a><a href="/privacy-settings.html">Privacy Settings</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></div></div><div class="container footer-bottom"><p>&copy; <span class="yr">2026</span> Chef Melissa.</p><p>Independent publisher.</p></div></footer>
+<script>
+document.querySelectorAll('.yr').forEach(function(e){e.textContent=new Date().getFullYear();});
+document.getElementById('resetConsent').addEventListener('click', function () {
+  try {
+    document.cookie = 'cm-consent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    localStorage.removeItem('cm-consent');
+  } catch (e) {}
+  document.getElementById('resetStatus').textContent = 'Consent reset. The banner will reappear on your next page load.';
+});
+document.getElementById('clearLocal').addEventListener('click', function () {
+  var keys = ['cm-pantry', 'cm-scaler-servings', 'cm-consent'];
+  try { keys.forEach(function (k) { localStorage.removeItem(k); }); } catch (e) {}
+  document.getElementById('clearStatus').textContent = 'Cleared. The pantry checklist and recipe scaler will start fresh.';
+});
+</script>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
