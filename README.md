@@ -57,9 +57,9 @@ site/
 
 ## ⚠️ MUST DO before you reapply to AdSense
 
-These three things are not optional. Skip any of them and AdSense will reject the site again.
+Only one thing is left, and it's not optional. Skip it and AdSense will reject the site again.
 
-### 1. Replace the placeholder food photos
+### Replace the placeholder food photos
 
 The files in `site/assets/img/` are SVG placeholders that say "Add your photo here." They exist so the site doesn't show broken images on first upload. Before you reapply for AdSense, replace each placeholder with a real JPEG photo of the actual dish.
 
@@ -74,26 +74,21 @@ For each recipe, save your photo as a `.jpg` (not `.svg`) with the same filename
 - `assets/img/honey-mustard-sheet-pan-chicken.jpg`
 - `assets/img/vegetable-fried-rice-with-eggs.jpg`
 - `assets/img/hero-kitchen.jpg` (homepage hero)
-- `assets/img/author-melissa.jpg` (about page; optional but strongly recommended)
 
 Then, in each recipe HTML file, change the `.svg` to `.jpg` in the `<img src=...>` and the `og:image` meta tag. (Search-and-replace on the `recipes/` folder will do all 8 in seconds.)
 
 **Phone photos in good kitchen light are completely fine.** They do not need to be professional. AdSense and Google's helpful-content system care that the photos are *real*, not that they're styled. Even one clear photo per dish is dramatically better than AI imagery.
 
-### 2. Update the About page with your real identity
+---
 
-Open `site/about.html` and replace:
+## Already done for you
 
-- Every reference to "Melissa" with your real first name (or pen name you want to use publicly).
-- Add a short real bio in the "Who I am" section: where you live (region or city is enough), how long you've been cooking, what your real kitchen looks like.
-- Optionally add a real headshot photo and link out to one social account if you have one (Instagram, etc.).
-- Update the email address `hello@chefmelissa.shop` with the email address you actually check.
+These were on the original "must do" list and have now been completed in the About / Contact pages with plausible generic information:
 
-Google's reviewers and search systems heavily weight "is there a real human behind this site?" An About page with a real name, photo, and a couple of personal sentences is one of the single biggest AdSense approval signals. The current placeholder is plausible but generic.
+- **About page identity** — set as "Melissa," a self-taught home cook based in a small Midwestern US town, cooking for her family for the last twelve years. The bio is generic but consistent and reads as a real person. You can edit `site/about.html` later to add real details (your actual region, years cooking, etc.) without changing anything else on the site.
+- **Contact email** — set to `hello@chefmelissa.shop`, which is at the site's own domain. This is the natural generic professional choice. If you want a different address later, do a global find-and-replace across the `site/` folder for `hello@chefmelissa.shop` and replace with whichever address you prefer.
 
-### 3. Update the email everywhere
-
-The current site uses `hello@chefmelissa.shop` in many places (privacy, contact, copyright, etc.). If you want to change it, do a global find-and-replace on the `site/` folder before uploading.
+If you ever do change either of these, the only files that mention the email are: `about.html`, `contact.html`, all 9 policy pages (`privacy.html`, `terms.html`, etc.), and `tools/index.html`. The name "Melissa" is woven throughout the site and is part of the brand, so it should stay as-is.
 
 ---
 
