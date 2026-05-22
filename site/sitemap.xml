@@ -5,6 +5,7 @@
   <url><loc>https://chefmelissa.shop/contact.html</loc><priority>0.7</priority></url>
   <url><loc>https://chefmelissa.shop/start-here.html</loc><priority>0.7</priority></url>
   <url><loc>https://chefmelissa.shop/sitemap.html</loc><priority>0.5</priority></url>
+
   <url><loc>https://chefmelissa.shop/privacy.html</loc><priority>0.5</priority></url>
   <url><loc>https://chefmelissa.shop/cookie-policy.html</loc><priority>0.5</priority></url>
   <url><loc>https://chefmelissa.shop/privacy-settings.html</loc><priority>0.4</priority></url>
@@ -24,6 +25,13 @@
   <url><loc>https://chefmelissa.shop/recipes/lentil-vegetable-soup-with-rosemary.html</loc><priority>0.8</priority></url>
   <url><loc>https://chefmelissa.shop/recipes/honey-mustard-sheet-pan-chicken.html</loc><priority>0.8</priority></url>
   <url><loc>https://chefmelissa.shop/recipes/vegetable-fried-rice-with-eggs.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/apple-cinnamon-baked-oatmeal.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/pesto-white-bean-pasta.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/greek-chicken-pita-plates.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/sesame-ginger-tofu-bowls.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/shrimp-lemon-orzo-skillet.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/quinoa-stuffed-bell-peppers.html</loc><priority>0.8</priority></url>
+  <url><loc>https://chefmelissa.shop/recipes/turkey-zucchini-meatballs.html</loc><priority>0.8</priority></url>
 
   <url><loc>https://chefmelissa.shop/guides/</loc><priority>0.7</priority></url>
   <url><loc>https://chefmelissa.shop/guides/how-to-plan-a-week-of-dinners.html</loc><priority>0.6</priority></url>
@@ -31,6 +39,9 @@
   <url><loc>https://chefmelissa.shop/guides/safe-leftover-storage.html</loc><priority>0.6</priority></url>
   <url><loc>https://chefmelissa.shop/guides/how-to-balance-acid-fat-salt-heat.html</loc><priority>0.6</priority></url>
   <url><loc>https://chefmelissa.shop/guides/how-to-scale-recipes.html</loc><priority>0.6</priority></url>
+  <url><loc>https://chefmelissa.shop/guides/sheet-pan-dinner-formula.html</loc><priority>0.6</priority></url>
+  <url><loc>https://chefmelissa.shop/guides/make-ahead-breakfast-routine.html</loc><priority>0.6</priority></url>
+  <url><loc>https://chefmelissa.shop/guides/how-to-read-a-recipe-before-cooking.html</loc><priority>0.6</priority></url>
 
   <url><loc>https://chefmelissa.shop/tools/</loc><priority>0.6</priority></url>
   <url><loc>https://chefmelissa.shop/tools/conversion-calculator.html</loc><priority>0.5</priority></url>
