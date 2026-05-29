@@ -1,0 +1,12 @@
+{
+  "name": "Chef Melissa",
+  "short_name": "Chef Melissa",
+  "description": "Practical recipes and kitchen guides for everyday home cooks.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff7ee",
+  "theme_color": "#fff7ee",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
